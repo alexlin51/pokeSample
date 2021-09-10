@@ -1,0 +1,22 @@
+.mainBody {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    height: calc(100vh - 50px);
+    overflow-y: hidden;
+}
+
+.mainCenter {
+    width: 90%;
+    margin: auto;
+}
+
+.smartGrid {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    text-align: center;
+    overflow-y: scroll;
+    height: calc(100vh - 200px);
+}
+

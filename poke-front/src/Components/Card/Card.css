@@ -1,0 +1,46 @@
+.pokeCard{
+    position: relative;
+    text-align: center;
+    background-color: rgba(128, 128, 128, 0.137);
+    border-radius: 15px;
+    margin: 10px;
+    padding: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    max-width: 300px;
+    max-height: 300px;
+    min-height: 160px;
+}
+
+.cardActive {
+    background-color: rgba(128, 128, 128, 0.337);
+    cursor: pointer;
+}
+
+.cardText {
+    font-size: 12px;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 10px;
+}
+
+.favStar{
+    position: absolute;
+    right: 0;
+    padding: 10px;
+    top: 0;
+    color: rgba(128, 128, 128, 0.281);
+}
+
+.favStar:hover {
+    cursor: pointer;
+    color: rgba(128, 128, 128, 0.481);
+}
+
+.active {
+    color: blue;
+    height: 20px;
+}
+
+.active:hover {
+    color: blue;
+}

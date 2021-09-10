@@ -1,0 +1,55 @@
+.navbox {
+    position: relative;
+}
+
+.navTitle {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    color: yellow;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.navSpace{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logButton{
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+.subTabs{
+    font-family: 'Press Start 2P', cursive;
+    color: white;
+    font-size: 12px;
+    margin-right: 25px;
+}
+
+.subTabs:hover {
+    color: yellow;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .navSpace{
+        display: grid;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .navTitle{
+        margin: auto;
+    }
+
+    .logButton{
+        margin: auto;
+        padding-bottom: 10px;
+    }
+}
+

@@ -1,0 +1,18 @@
+.dialogBox{
+    padding: 20px;
+    text-align: center;
+}
+
+.boldText{
+    font-weight: bold;
+    font-size: 15px;
+    padding-bottom: 5px;
+}
+
+.subText{
+    font-size: 10px;
+}
+
+.underlineText {
+    text-decoration: underline;
+}

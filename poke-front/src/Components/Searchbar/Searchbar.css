@@ -1,0 +1,22 @@
+.searchBox {
+    padding-top: 15px;
+    width: 80%;
+    position: relative;
+    margin: auto;
+    display: flex;
+    padding-bottom: 15px;
+}
+
+.searchIcon {
+    color: gray;
+    padding-top: 20px;
+    padding-right: 10px;
+}
+
+.searchField {
+    width: 97%;
+}
+
+.onboardSmall{
+    font-size: 12px;
+}
