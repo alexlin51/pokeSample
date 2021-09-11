@@ -9,7 +9,7 @@
     padding-bottom: 30px;
     max-width: 300px;
     max-height: 300px;
-    min-height: 160px;
+    min-height: 220px;
 }
 
 .cardActive {
@@ -43,4 +43,8 @@
 
 .active:hover {
     color: blue;
+}
+
+.imagepad{
+    margin-top: 15px;
 }

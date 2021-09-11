@@ -39,10 +39,14 @@ export default function MainSearch(props) {
         let request;
         if (props.tab === 'home') {
             if (search !== ""){
+                setPoke([]);
                 try{
                     request = await Axios.get(`https://pokeapi.co/api/v2/pokemon/${search.toLowerCase()}/`);
                 } catch(err){
                     console.log(err);
+                    setPoke([])
+                    setNextUrl("");
+                    return;
                 }
                 setNextUrl("");
                 setPoke([request.data]);
@@ -90,7 +94,7 @@ export default function MainSearch(props) {
                 return;
             }
         
-            if (target.scrollHeight-target.scrollTop === target.clientHeight) {
+            if (target.scrollHeight-target.scrollTop <= target.clientHeight + 150) {
                 let request;
                 try{
                     request = await Axios.get(nextUrl);
@@ -144,11 +148,13 @@ export default function MainSearch(props) {
                 <Searchbar search={search} setSearch={setSearch} request={searchQuery}/>
                 <div className="smartGrid" onScroll={addMore}>
                     { 
-                        (poke) ? (
+                        (poke.length > 0) ? (
                             poke.map((data) => {
                                 return <Card data={data} key={data.url} flop={flop} flip={flip} tab={props.tab}/>
                             })
-                        ) : null
+                        ) : (
+                            <div>No results found</div>
+                        )
                     }
                 </div>
            </div>

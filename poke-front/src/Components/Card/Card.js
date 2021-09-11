@@ -100,7 +100,8 @@ export default function Card(props) {
             {
                 (img) ? (
                     <div>
-                        <img src={img} onClick={openCard} onMouseEnter={yesHover} onMouseLeave={noHover}/>
+                        <div style={{"height": "15px"}}/>
+                        <img className="imagepad" src={img} onClick={openCard} onMouseEnter={yesHover} onMouseLeave={noHover}/>
                         <div className="cardText" onClick={openCard} onMouseEnter={yesHover} onMouseLeave={noHover}>
                             {name}
                         </div>
